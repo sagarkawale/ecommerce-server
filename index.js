@@ -21,7 +21,8 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "*",
+    origin: "https://eccomerce-client-gray.vercel.app",
+    credentials: true,
   })
 );
 app.use(morgan("dev"));
